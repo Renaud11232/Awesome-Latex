@@ -7,7 +7,6 @@
 %  breaklines=true,
 %  frame=single}
 %\usepackage{hyperref}
-\newcommand{\subtitle}[1]{\def\@subtitle{#1}}
 
 \begin{document}
 
@@ -15,24 +14,16 @@
 %	DOCUMENT META
 %----------------------------------------------------------------------------------------
 
+\backgroundimage{background}
 \title{Title}
 \subtitle{Some Title}
-\author{\Large Some People}
+\author{Some People}
+
 %----------------------------------------------------------------------------------------
 %	TITLE PAGE
 %----------------------------------------------------------------------------------------
 
-\begingroup
-\thispagestyle{empty}
-\AddToShipoutPicture*{\put(0,0){\includegraphics[scale=1.25]{background}}} % Image background
-\centering
-\vspace*{5cm}
-\par\normalfont\fontsize{35}{35}\sffamily\selectfont
-\textbf{\thetitle}\\
-{\LARGE\@subtitle}\par
-\vspace*{1cm}
-{\theauthor}\par
-\endgroup
+\makefrontpage
 
 %----------------------------------------------------------------------------------------
 %	COPYRIGHT PAGE
