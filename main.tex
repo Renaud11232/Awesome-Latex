@@ -1,13 +1,11 @@
-\documentclass{awesome} % Default font size and left-justified equations
-\definecolor{ocre}{RGB}{52,177,201} % Define the orange color used for highlighting throughout the bookgs
+\documentclass{awesome}
+\definecolor{highlightcolor}{RGB}{52,177,201}
 \definecolor{overlaycolor}{HTML}{12a6de}
 \addbibresource{bibliography.bib} % BibTeX bibliography file
-\input{structure} % Insert the commands.tex file which contains the majority of the structure behind the template
 %\usepackage{listings}
 %\lstset{basicstyle=\ttfamily\footnotesize,
 %  breaklines=true,
 %  frame=single}
-%\usepackage{hyperref}
 
 \begin{document}
 
@@ -15,7 +13,7 @@
 %	DOCUMENT META
 %----------------------------------------------------------------------------------------
 
-\backgroundimage{background}
+\backgroundimage{assets/background.png}
 \title{Title}
 \subtitle{Some Title}
 \author{Some People}
@@ -30,12 +28,15 @@
 %	TABLE OF CONTENTS
 %----------------------------------------------------------------------------------------
 
-\chapterimage{head.png}
+\chapterimage{assets/head.png}
 
 \tableofcontents
 
 \chapter{Introduction}
 BLABLABLA
+\begin{theorem}
+this a theorem
+\end{theorem}
 
 \nocite{*}
 \printbibliography
