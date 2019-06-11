@@ -23,6 +23,9 @@
 \newcommand\backgroundimage[1]{\renewcommand{\backgroundimage}{#1}}
 \newcommand\subtitle[1]{\renewcommand{\subtitle}{#1}}
 \newcommand\makefrontpage{
+	\begin{tikzpicture}[remember picture,overlay]
+   		\node [opacity=0.7, rectangle, fill=overlaycolor, anchor=north, minimum width=\paperwidth+1cm, minimum height=9cm] (box) at (0.5cm,-3.5cm){};
+	\end{tikzpicture}
   \begingroup
   \thispagestyle{empty}
   \ifthenelse{\equal{\backgroundimage}{}}{}{
