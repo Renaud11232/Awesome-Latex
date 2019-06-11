@@ -1,0 +1,85 @@
+\documentclass[11pt,fleqn]{report} % Default font size and left-justified equations
+\usepackage[top=3cm,bottom=3cm,left=3.2cm,right=3.2cm,headsep=10pt,letterpaper]{geometry} % Page margins
+\usepackage[x11names]{xcolor} % Required for specifying colors by name
+\definecolor{ocre}{RGB}{52,177,201} % Define the orange color used for highlighting throughout the book
+\usepackage[utf8]{inputenc}
+% Font Settings
+\usepackage{avant} % Use the Avantgarde font for headings
+%\usepackage{times} % Use the Times font for headings
+\usepackage{mathptmx} % Use the Adobe Times Roman as the default text font together with math symbols from the Sym­bol, Chancery and Com­puter Modern fonts
+\usepackage{microtype} % Slightly tweak font spacing for aesthetics
+%\usepackage[utf8]{inputenc} % Required for including letters with accents
+\usepackage[T1]{fontenc} % Use 8-bit encoding that has 256 glyphs
+\usepackage[backend=biber, style=numeric, sorting=none]{biblatex}
+\addbibresource{bibliography.bib} % BibTeX bibliography file
+\defbibheading{bibempty}{}
+\input{structure} % Insert the commands.tex file which contains the majority of the structure behind the template
+\usepackage{csquotes}
+\usepackage{listings}
+\lstset{basicstyle=\ttfamily\footnotesize,
+  breaklines=true,
+  frame=single}
+\usepackage{hyperref}
+\newcommand{\subtitle}[1]{\def\@subtitle{#1}}
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	DOCUMENT META
+%----------------------------------------------------------------------------------------
+
+\title{Title}
+\subtitle{Some Title}
+\author{\Large Some People}
+%----------------------------------------------------------------------------------------
+%	TITLE PAGE
+%----------------------------------------------------------------------------------------
+
+\begingroup
+\thispagestyle{empty}
+\AddToShipoutPicture*{\put(0,0){\includegraphics[scale=1.25]{background}}} % Image background
+\centering
+\vspace*{5cm}
+\par\normalfont\fontsize{35}{35}\sffamily\selectfont
+\textbf{\thetitle}\\
+{\LARGE\@subtitle}\par
+\vspace*{1cm}
+{\theauthor}\par
+\endgroup
+
+%----------------------------------------------------------------------------------------
+%	COPYRIGHT PAGE
+%----------------------------------------------------------------------------------------
+
+%\newpage
+%~\vfill
+%\thispagestyle{empty}
+%
+%%\noindent Copyright \copyright\ 2014 Andrea Hidalgo\\ % Copyright notice
+%
+%\noindent \textsc{Summer Research Internship, University of Western Ontario}\\
+%
+%\noindent \textsc{github.com/LaurethTeX/Clustering}\\ % URL
+%
+%\noindent This research was done under the supervision of Dr. Pauline Barmby with the financial support of the MITACS Globalink Research Internship Award within a total of 12 weeks, from June 16th to September 5th of 2014.\\ % License information
+%
+%\noindent \textit{First release, August 2014} % Printing/edition date
+
+%----------------------------------------------------------------------------------------
+%	TABLE OF CONTENTS
+%----------------------------------------------------------------------------------------
+
+\chapterimage{head.png}
+
+\pagestyle{empty}
+\tableofcontents
+\pagestyle{fancy}
+
+\chapterimage{head.png}
+\chapter{Introduction}
+BLABLABLA
+
+\nocite{*}
+\printbibliography[title={References}]
+
+\end{document}
