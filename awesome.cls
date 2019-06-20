@@ -1,3 +1,12 @@
+%
+% Original author of the Legrand Orange Book Template::
+% Mathias Legrand (legrand.mathias@gmail.com) with modifications by:
+% Vel (vel@latextemplates.com)
+% Renaud Gaspard (gaspardrenaud@hotmail.com)
+%
+% Original License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
 \ProvidesClass{awesome}[11/06/2019 Awesome Class]
 \LoadClass[11pt,fleqn]{report} %My be set to report or book
 \NeedsTeXFormat{LaTeX2e}
